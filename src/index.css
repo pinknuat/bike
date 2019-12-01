@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+/*Front Page Div Styling*/
+a {
+  text-decoration: none;
+}
+.goImg {
+  width: 90%;
+  padding: 0px 5%;
+  padding-top: 12px;
+}
+
+.linkK {
+  color: black;
+  border-bottom: 2px solid #ec70dc;
+  transition: 0.3s;
+}
+.linkK:hover {
+  color: #ec70dc;
+}
+.quad {
+  width: 24%;
+  margin: 0px 0.5%;
+  margin-bottom: 20px;
+}
+.img {
+  width: 100%;
+}
+.bottomBord {
+  border-bottom: 1px solid #2c3e50;
+  margin: 0px 2%;
+}
+.subtitle {
+  margin-top: -15px;
+  font-size: 12px;
+}
+.titleL {
+  margin-bottom: -1px;
+}
+.titleX {
+  margin-bottom: -7px;
+}
+canvas {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.center {
+  text-align: center;
+}
+
+.mediumSize {
+  font-size: 13px;
+}
+.popDiv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: column;
+}
+.popOutDiv {
+  width: 80% !important;
+}
+.imgPH {
+  min-height: 300px;
+}
+.hover {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.dayDiv {
+  padding-bottom: 40px;
+}
+.menuBike {
+  margin: 0px;
+  margin-bottom: 2px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.hoverMen:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: #f7797d;
+}
+
+.botMenu {
+  position: relative;
+  opacity: 1;
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  transition: 0.2s;
+  padding: 10px 0px;
+  /* text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; */
+}
+
+.colStat {
+  width: 23%;
+  margin-left: 2%;
+}
+.colBack {
+  width: 50%;
+  margin-right: 0%;
+}
+.filmDiv {
+  width: 23%;
+  margin-right: 2%;
+  display: flex;
+  align-items: center;
+}
+.absol {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  margin-top: 140px;
+  z-index: -1;
+}
+.outerBikeDiv {
+  margin: 0px 3%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hover:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.landing {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.smallFont {
+  font-size: 13px;
+}
+.landLeft {
+  /* background: transparent; */
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+}
+.landRight {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.landLeft,
+.landRight {
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+}
+.bikeDiv {
+  position: fixed;
+  left: 50%;
+  margin-left: -9px;
+  z-index: 500;
+  margin-top: 3vh;
+}
+.aboutDiv {
+  position: fixed;
+  left: 50%;
+  margin-left: -9px;
+  z-index: 500;
+  margin-top: 95vh;
+}
+.aboutIcon,
+.bikeIcon {
+  width: 20px;
+  pointer-events: all;
+  transition: 0.3s;
+}
+.aboutIcon:hover,
+.bikeIcon:hover {
+  opacity: 0.6;
+}
+.titleTextDiv {
+  background: transparent;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  transition: 0.3s;
+}
+.titleTextDiv:hover {
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.163);
+}
+
+/*Display Page Div Styling*/
+.photoDiv {
+  padding: 0px;
+  display: inline-flex;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0px;
+}
+.photoF {
+  padding-top: 20px;
+  transition: 0.3s;
+}
+.photoF:hover {
+  opacity: 0.7;
+}
+.tri {
+  display: flex;
+
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  flex-basis: 32.3%;
+  flex-direction: column;
+}
+.topBar {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.returnDiv {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* text */
+.textDiv {
+  padding: 0px;
+  display: inline-flex;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0px;
+}
+.mmTex {
+  width: 22%;
+  margin: 0px 1%;
+}
+.mmTexIn {
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  color: #ffffff;
+}
+.museText {
+}
+.dateText {
+  font-size: 9px;
+  margin-top: 0px;
+}
+.museDiv {
+  width: 100%;
+  background: #383838;
+}
+.inMuseDiv {
+  width: 100%;
+  padding: 4px 0px;
+  border-bottom: 1.5px solid rgba(155, 155, 155, 0.687);
+}
+
+.originalTex,
+.inspireTex {
+  width: 41%;
+  margin-left: 1%;
+}
+.textRowDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.textSquare {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #383838;
+  margin-bottom: 3%;
+}
+.textSquare:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.textSquareIn {
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  width: 94%;
+  margin: 0px 3%;
+}
+.textTileText {
+  margin-top: 45%;
+  position: relative;
+  text-align: center;
+}
+.textCol {
+  width: 48%;
+  margin: 0px 1%;
+}
+
+.texIn {
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+/*Text Styling*/
+.pageTitle {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.titleText {
+  text-align: center;
+  padding-top: 45vh;
+  margin-top: 0px;
+  color: #ffffff;
+}
+
+.linkStyle {
+  text-decoration: none;
+}
+
+/*Icon/Photo Styling*/
+.menuIcon {
+  max-width: 25px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.menuIcon:hover {
+  opacity: 0.8;
+}
+.returnIcon {
+  max-width: 15px;
+  text-align: center;
+}
+.returnIcon:hover {
+  opacity: 0.8;
+}
+.yt {
+  padding-top: 3%;
+}
+.photo {
+  width: 100%;
+  margin: 0px;
+  padding: 4px 0px;
+  -webkit-transition: transform 2s; /* For Safari 3.1 to 6.0 */
+  transition: transform 2s;
+}
+
+.dialogStyles {
+  background-color: #ffffff;
+  height: 45vh;
+  text-align: center;
+  width: 80%;
+
+  /* margin-left: -42vw; */
+}
+/* @media screen and (max-width: 880px) {
+  .colStat,
+  .colBack,
+  .filmDiv {
+    width: 100%;
+    margin: 1%;
+    padding: 0px;
+  }
+  .goImg {
+    padding: 0px;
+  }
+} */
+@media screen and (max-width: 660px) {
+  .colStat,
+  .colBack,
+  .filmDiv {
+    width: 100%;
+    margin: 1%;
+    padding: 0px;
+  }
+  .goImg {
+    padding: 0px;
+    width: 70%;
+  }
+  canvas {
+    width: 100%;
+  }
+  .botMenu {
+    margin: 0px;
+    width: 100%;
+  }
+  .aboutDiv {
+    margin-top: 5vh;
+    left: 95%;
+  }
+  .bikeDiv {
+    margin-top: 5vh;
+    left: 5%;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .landLeft,
+  .landRight,
+  .quad {
+    width: 100%;
+  }
+  .photoDiv {
+    display: inline-block;
+  }
+  .tri,
+  .photo {
+    width: 100%;
+    margin: 0px;
+    padding: 4px 0px;
+  }
+
+  .textDiv {
+    flex-direction: column-reverse;
+  }
+  .mmTex {
+    width: 100%;
+  }
+  .inspireTex,
+  .originalTex,
+  .mmTex {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .photoF,
+  .goImg {
+    width: 100%;
+  }
+}
